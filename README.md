@@ -27,5 +27,5 @@ To add a border to a table, I need to first add `border-collapse: collapse;` on 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/vercthu)
+- Frontend Mentor - [@vercthu](https://www.frontendmentor.io/profile/vercthu)
 - Bluesky - [@camundonguinha.bsky.social](https://bsky.app/profile/camundonguinha.bsky.social)

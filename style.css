@@ -1,0 +1,166 @@
+:root {
+    --rose-800: #7A284E;
+    --rose-50: #FFF7FB;
+    --stone-900: #312E2C;
+    --stone-600: #5F564D;
+    --stone-150: #E3DDD7;
+    --stone-100: #F3E5D7;
+    --brown-800: #854632;
+    --bodyfont: 'Outfit', sans-serif;
+    --headingsfont: 'Young Serif', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+  }
+
+  @font-face {
+    font-family: "Young Serif";
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+  }
+
+body {
+    background-color: var(--stone-100);
+    color: var(--stone-600);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--bodyfont);
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: var(--headingsfont);
+    color: var(--stone-900);
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1;
+}
+
+h2 {
+    font-family: var(--headingsfont);
+    color: var(--brown-800);
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 1;
+}
+
+li {
+    padding: 0 0 0 20px;
+    margin: 5px 0;
+}
+li::marker {
+    color: var(--brown-800);
+}
+
+hr {
+    border-top: 1px solid var(--stone-150);
+    margin: 32px 0;
+}
+
+.card {
+    width: 100%;
+    max-width: 736px;
+    padding: 40px;
+    border-radius: 24px;
+    background-color: white;
+    margin: 128px auto;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.preparation {
+    background-color: var(--rose-50);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.preparation h2 {
+    font-family: var(--bodyfont);
+    color: var(--rose-800);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.preparation li::marker {
+    color: var(--rose-800);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-border {
+    border-bottom: 1px solid var(--stone-150);
+}
+th, td {
+    margin: 0;
+    padding: 12px 0;
+}
+th {
+    text-align: left;
+    font-weight: normal;
+    padding-left: 32px;
+    width: 50%;
+}
+td {
+    text-align: left;
+    font-weight: bold;
+    color: var(--brown-800);
+    width: 50%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--brown-800);
+}
+.attribution a {
+    color: var(--brown-800);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        display: block;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        border-radius: 0;
+    }
+    .card {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    section {
+        padding: 0px 32px;
+    }
+    .preparation {
+        margin: 0 32px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    hr {
+        margin: 32px 32px;
+    }
+    footer {
+        margin-top: 32px;
+    }
+}
